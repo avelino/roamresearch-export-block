@@ -1,0 +1,29 @@
+{
+  "name": "roamresearch-export-block",
+  "version": "0.1.0",
+  "description": "Export Roam Research blocks to different formats (Slack, WhatsApp, Google Docs and Rich Text)",
+  "main": "dist-export-block/extension.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build --base=./"
+  },
+  "keywords": [
+    "roam",
+    "roam-research",
+    "plugin",
+    "export",
+    "markdown"
+  ],
+  "author": "Avelino",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.19.25",
+    "typescript": "^5.9.3",
+    "vite": "^6.4.1"
+  },
+  "dependencies": {
+    "@contentful/rich-text-from-markdown": "^16.1.8",
+    "clipboard-polyfill": "^4.1.1"
+  }
+}
