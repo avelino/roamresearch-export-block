@@ -8,6 +8,8 @@
 
 A Roam Research extension that exports blocks (together with their children) to multiple formats, keeping the structure and formatting ready to paste into other applications.
 
+**Inspired by [logseq-export-block](https://github.com/avelino/logseq-export-block)** - A similar plugin for Logseq that served as the foundation for this Roam Research adaptation.
+
 ## Features
 
 - Export Roam blocks with their children to multiple formats
@@ -53,7 +55,7 @@ The extension processes your Roam blocks and their children, applying format-spe
 
 ## Development
 
-This extension is built with TypeScript and integrates directly with the Roam Research API.
+This extension is built with TypeScript using Vite as the build tool and integrates directly with the Roam Research API.
 
 ### Building from source
 
@@ -61,11 +63,18 @@ This extension is built with TypeScript and integrates directly with the Roam Re
 # Install dependencies
 npm install
 
-# Build the plugin
+# Build the extension
 npm run build
 ```
 
-The compiled bundle is emitted in `dist/index.js`, ready to be loaded by Roam Depot or injected via the Roam `custom` JS settings.
+The compiled bundle is emitted in `dist-export-block/extension.js`, ready to be loaded by Roam Depot or injected via the Roam `custom` JS settings.
+
+### Development server
+
+```bash
+# Start development server with hot reload
+npm run dev
+```
 
 ## License
 
